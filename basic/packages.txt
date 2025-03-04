@@ -1,0 +1,11 @@
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
+fzf
+eza
+glow
+yazi
+scrcpy
+git
+lazygit
+zoxide
