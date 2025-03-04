@@ -9,3 +9,4 @@ scrcpy
 git
 lazygit
 zoxide
+kitty
