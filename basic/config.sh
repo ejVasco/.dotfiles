@@ -7,6 +7,7 @@ BASICFILES_DIR="$HOME/.dotfiles/basic"
 declare -A FILES
 FILES[".zshrc"]="$HOME/.zshrc"
 FILES[".config/tmux"]="$HOME/.config/tmux"
+FILES[".config/nvim"]="$HOME/.config/nvim"
 
 # Create symlinks
 for file in "${!FILES[@]}"; do
