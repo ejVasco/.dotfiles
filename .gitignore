@@ -1,0 +1,4 @@
+# ignore logs
+*.log
+# ignore tmux plugins, install manually in tmux with CTRL + SPACE then I
+basic/.config/tmux/plugins/
