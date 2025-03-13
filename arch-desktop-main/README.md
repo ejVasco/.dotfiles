@@ -43,8 +43,8 @@ The config for `archinstall` that I use:
 ## Ater Install, Reboot, and Login
 #### 1. Connect to internet
 - open terminal (in hyprland open kitty with `SUPER+Q` by default)
-- run `nmtui`
+- run ```nmtui```
     - this is the network manager terminal user interface
     - if you can't connect or something is wrong, good luck
-- verify connection using `ping google.com` or something similar
-- `sudo systemctl enable --now NetworkManager` so network manager starts on boot
+- verify connection using ```ping google.com``` or something similar
+- ```sudo systemctl enable --now NetworkManager``` so network manager starts on boot
