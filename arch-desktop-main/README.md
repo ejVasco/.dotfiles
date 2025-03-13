@@ -10,6 +10,7 @@ This directory contains:
 | `.config` | directory of config files
 | `config.sh` | script that will apply configs
 ## Installing Arch Linux
+Before installing, should connect to internet using `iwctl`.
 The config for `archinstall` that I use:
 - Archinstall language (Default) : English
 - Locales (Default)
@@ -41,19 +42,24 @@ The config for `archinstall` that I use:
 - Timezone (user choice)
 - Automatic time sync (NPT): NTP: Enabled
 ## Ater Install, Reboot, and Login
-#### 1. Connect to internet
+#### 1. Networking/Internet
 - open terminal (in hyprland open kitty with `SUPER+Q` by default)
-- run 
-
-
-```nmtui```
+- run `nmtui`
     - this is the network manager terminal user interface
     - if you can't connect or something is wrong, good luck
-- verify connection using this or something similar
-
-
-```ping google.com``` 
-- enable network manager starts on boot
-
-
-```sudo systemctl enable --now NetworkManager``` 
+- verify connection using `ping google.com` or something similar
+- `sudo systemctl enable --now NetworkManager` so network manager starts on boot
+#### 2. Update system
+Just in case:
+- `sudo pacman -Syu`
+#### 3. Installing paru
+- follow install instructions on [paru repo here](https://github.com/Morganamilo/paru)
+- verify with `paru --version`
+#### 4. Install Packages and Configs
+- backup `.config` and possibly `.zshrc`
+```
+cp
+```
+- clone repo in home directory (`cd` takes you to home directory)
+```git clone https://github.com/ejVasco/.dotfiles.git```
+## Packages Info
