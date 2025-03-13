@@ -6,6 +6,8 @@ neovim
 lazygit
 tmux
 ttf-dejavu
-mako
+ttf-liberation
+ttf-roboto
+swaync
 vivaldi
 glow
