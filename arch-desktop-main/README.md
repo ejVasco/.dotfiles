@@ -51,14 +51,18 @@ The config for `archinstall` that I use:
 - `sudo systemctl enable --now NetworkManager` so network manager starts on boot
 #### 2. Update system
 Just in case:
-- `sudo pacman -Syu`
+```bash
+sudo pacman -Syu
+```
 #### 3. Installing paru
 - follow install instructions on [paru repo here](https://github.com/Morganamilo/paru)
 - verify with `paru --version`
 #### 4. Install Packages and Configs
+- navigate to home directory
 - backup `.config` and possibly `.zshrc`
 ```
-cp
+bash
+mkd
 ```
 - clone repo in home directory (`cd` takes you to home directory)
 ```git clone https://github.com/ejVasco/.dotfiles.git```
