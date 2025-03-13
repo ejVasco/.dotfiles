@@ -8,3 +8,4 @@ tmux
 ttf-dejavu
 mako
 vivaldi
+glow
