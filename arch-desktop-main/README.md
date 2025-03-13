@@ -1,5 +1,7 @@
 # arch-desktop-main
-This is the main directory that has my configs (other directories will pull configs for things from here, like tmux and nvim)
+This is the main directory that has my configs (scripts in other directories may pull some configs here, like tmux and nvim).
+
+If you just want to install the packages and/or configs, skip to [After Install step 4](#4-install-packages-and-configs-using-this-repo) (**NOT RECOMMENDED**).
 ## Contents
 This directory contains:
 | File/Directory | What is it |
@@ -44,26 +46,54 @@ The config for `archinstall` that I use:
 ## Ater Install, Reboot, and Login
 #### 1. Networking/Internet
 - open terminal (in hyprland open kitty with `SUPER+Q` by default)
-- run `nmtui`
-    - this is the network manager terminal user interface
-    - if you can't connect or something is wrong, good luck
-- verify connection using `ping google.com` or something similar
-- `sudo systemctl enable --now NetworkManager` so network manager starts on boot
+- connect to a network using 
+```
+nmtui
+```
+(this is the network manager terminal user interface. if you can't connect or something is wrong, good luck)
+- verify connection using via below command or something similar
+```
+ping google.com
+```
+- enable network manager starts on boot
+```
+sudo systemctl enable --now NetworkManager
+```
 #### 2. Update system
 Just in case:
-```bash
+```
 sudo pacman -Syu
 ```
 #### 3. Installing paru
-- follow install instructions on [paru repo here](https://github.com/Morganamilo/paru)
-- verify with `paru --version`
-#### 4. Install Packages and Configs
-- navigate to home directory
-- backup `.config` and possibly `.zshrc`
+- follow install instructions on the [paru repository](https://github.com/Morganamilo/paru)
+- verify installation with 
 ```
-bash
-mkd
+paru --version
+```
+#### 4. Remove some default packages (optional)
+The archinstall script installs some packages that I have preferred alternatives that will be installed in the next step, this command removes those before I install my preferred packages.
+```
+paru -Rns WIPWIPWIPWIPWIPWIP
+```
+#### 5. Install packages and configs using this repo
+- navigate to home directory
+```
+cd ~
+```
+- create `backup_config` directory and copies `.config` and `.zshrc` (if they exist)
+```
+mkdir -p backup_config
+cp -a .zshrc backup_config
+cp -a .config backup_config
 ```
 - clone repo in home directory (`cd` takes you to home directory)
-```git clone https://github.com/ejVasco/.dotfiles.git```
+```
+git clone https://github.com/ejVasco/.dotfiles.git
+```
 ## Packages Info
+INSERT TABLE HERE
+
+# TODO
+- Reminder to remove mako package from old pc
+- work on [section 4](#4-remove-some-default-packages-(optional))
+- work on [package info](#packages-info)
