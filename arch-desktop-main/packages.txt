@@ -1,3 +1,10 @@
+github-cli
 zsh
 zsh-autosuggestions
 zsh-syntax-highlighting
+neovim
+lazygit
+tmux
+ttf-dejavu
+mako
+vivaldi
