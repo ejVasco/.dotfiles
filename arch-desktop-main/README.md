@@ -81,13 +81,13 @@ The alternatives that will be installed are neovim, swaync, btop.
 ```
 cd ~
 ```
-- create `backup_config` directory and copies `.config` and `.zshrc` (if they exist)
+- create `backup_config` directory and copy `.config` and `.zshrc` (if they exist)
 ```
 mkdir -p backup_config
 cp -a .zshrc backup_config
 cp -a .config backup_config
 ```
-- clone repo in home directory (`cd ~` will take you to home directory if you are not there already)
+- clone repo into home directory (`cd ~` will take you to home directory if you are not there already)
 ```
 git clone https://github.com/ejVasco/.dotfiles.git
 ```
@@ -99,9 +99,17 @@ cd .dotfiles/arch-desktop-main
 ```
 chmod +x 1packages.sh 2config.sh
 ```
+- run each script
+```
+./1package.sh
+```
+```
+./2config.sh
+```
 ## Packages Info
-INSERT TABLE HERE
-
+This is just a really long section, that won't be super specific about packages, just my use cases basically.
+| Package | What is it |
+|---------|------------|
+| zsh     | alternative shell to bash
 # TODO
-- work on [section 4](#4-remove-some-default-packages-(optional))
 - work on [package info](#packages-info)
