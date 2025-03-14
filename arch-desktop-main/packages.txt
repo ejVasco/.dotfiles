@@ -1,3 +1,19 @@
+dolphin
+grim
+hyprland
+iwd
+openssh
+polkit-kde-agent
+qt5-wayland
+qt6-wayland
+slurp
+smartmontools
+wget
+wireless_tools
+wofi
+wpa_supplicant
+xdg-desktop-portal-hyprland
+xdg-utils
 github-cli
 zsh
 zsh-autosuggestions
@@ -11,3 +27,6 @@ ttf-roboto
 swaync
 vivaldi
 glow
+btop
+eza
+neofetch

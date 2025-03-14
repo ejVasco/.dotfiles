@@ -1,16 +1,16 @@
 # arch-desktop-main
-This is the main directory that has my configs (scripts in other directories may pull some configs here, like tmux and nvim).
+This is the main directory that has my configs (scripts in other directories may pull some configs here, like tmux and nvim). Information in this file will assume you followed along, installing hyprland as shown in the archinstall script below.
 
 If you just want to install the packages and/or configs, skip to [After Install step 4](#4-install-packages-and-configs-using-this-repo) (**NOT RECOMMENDED**).
 ## Contents
 This directory contains:
 | File/Directory | What is it |
-|-|-|
-| `.zshrc` | Zshell config
+|----------------|------------|
+| `.zshrc`       | Zshell config
 | `packages.txt` | text file of packages I need/want
-| `packages.sh` | script to install all packages using __*paru*__
-| `.config` | directory of config files
-| `config.sh` | script that will apply configs
+| `1packages.sh` | script to install all packages using __*paru*__
+| `.config`      | directory of config files
+| `2config.sh`   | script that will apply configs
 ## Installing Arch Linux
 Before installing, should connect to internet using `iwctl`.
 The config for `archinstall` that I use:
@@ -42,7 +42,7 @@ The config for `archinstall` that I use:
 - Network configuration: NetworkManager
 - Additional packages (None / User choice)
 - Timezone (user choice)
-- Automatic time sync (NPT): NTP: Enabled
+- Automatic time sync (NTP): NTP: Enabled
 ## Ater Install, Reboot, and Login
 #### 1. Networking/Internet
 - open terminal (in hyprland open kitty with `SUPER+Q` by default)
@@ -71,10 +71,11 @@ sudo pacman -Syu
 paru --version
 ```
 #### 4. Remove some default packages (optional)
-The archinstall script installs some packages that I have preferred alternatives that will be installed in the next step, this command removes those before I install my preferred packages.
+The archinstall script installs some basic packages. I have preferred alternatives to these packages that will be installed by `packages.sh`. If you prefer these packages, then don't remove them (like nano which is easy to use compared to neovim which has to be learned)
 ```
-paru -Rns WIPWIPWIPWIPWIPWIP
+paru -Rns nano vim dunst htop 
 ```
+The alternatives that will be installed are neovim, swaync, btop.
 #### 5. Install packages and configs using this repo
 - navigate to home directory
 ```
@@ -86,14 +87,21 @@ mkdir -p backup_config
 cp -a .zshrc backup_config
 cp -a .config backup_config
 ```
-- clone repo in home directory (`cd` takes you to home directory)
+- clone repo in home directory (`cd ~` will take you to home directory if you are not there already)
 ```
 git clone https://github.com/ejVasco/.dotfiles.git
+```
+- navigate into the correct directory
+```
+cd .dotfiles/arch-desktop-main
+```
+- make scripts into executables
+```
+chmod +x 1packages.sh 2config.sh
 ```
 ## Packages Info
 INSERT TABLE HERE
 
 # TODO
-- Reminder to remove mako package from old pc
 - work on [section 4](#4-remove-some-default-packages-(optional))
 - work on [package info](#packages-info)
