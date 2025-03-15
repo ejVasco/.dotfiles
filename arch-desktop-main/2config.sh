@@ -30,6 +30,12 @@ systemctl --user enable --now swaync
 systemctl --user restart swaync
 
 #------------------------------------------------
+# zsh
+info "Changing default shell to zsh..."
+chsh -s /bin/zsh
+
+#------------------------------------------------
+# setting configs
 
 # Symlink function (checks if file exists, backs up, and then links)
 link_file() {
@@ -42,15 +48,13 @@ link_file() {
     ln -s "$source" "$target"
     info "Linked $source -> $target"
 }
-
 # Ensure ~/.config directory exists
 mkdir -p "$HOME/.config"
-
 # Link individual config files
 info "Linking dotfiles..."
 link_file "$MAIN_DIR/.zshrc" "$HOME/.zshrc"
-link_file "$MAIN_DIR/.config/tmux" "$HOME/.config/tmux"
-link_file "$MAIN_DIR/.config/nvim" "$HOME/.config/nvim"
+# link_file "$MAIN_DIR/.config/tmux" "$HOME/.config/tmux"
+# link_file "$MAIN_DIR/.config/nvim" "$HOME/.config/nvim"
 
 #------------------------------------------------
 
