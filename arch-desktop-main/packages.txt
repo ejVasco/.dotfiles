@@ -19,6 +19,7 @@ zsh
 zsh-autosuggestions
 zsh-syntax-highlighting
 fzf
+zoxide
 neovim
 lazygit
 tmux
@@ -32,3 +33,6 @@ glow
 btop
 eza
 neofetch
+discord
+scrcpy
+grayjay-bin
