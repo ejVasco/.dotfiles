@@ -118,3 +118,4 @@ This is just a really long section, that won't be super specific about packages,
 - add checks for enable stuff in the config.sh, I rembember chatgpt showed me an example
 - do tmux, hyprland, waybar, kitty, nvim configs first
 - look into these packages since i dont have them installed: hypridle, hyprlock, hyprpaper, hyprpolkitagent, hyprsunset, hyprsysteminfo
+- look into the dracula theme since its near universal
