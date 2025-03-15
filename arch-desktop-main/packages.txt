@@ -18,12 +18,14 @@ github-cli
 zsh
 zsh-autosuggestions
 zsh-syntax-highlighting
+fzf
 neovim
 lazygit
 tmux
 ttf-dejavu
 ttf-liberation
 ttf-roboto
+libnotify
 swaync
 vivaldi
 glow
