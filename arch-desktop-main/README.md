@@ -116,3 +116,4 @@ This is just a really long section, that won't be super specific about packages,
 - .zshrc stuff (compare to pc)
 - also compare old config.sh file to see what i'm forgetting, cant rember rn tbh
 - add checks for enable stuff in the config.sh, I rembember chatgpt showed me an example
+- do tmux, hyprland, waybar, kitty configs first
