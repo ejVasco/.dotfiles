@@ -71,6 +71,10 @@ alias tmuxa='tmux a -t' # attach to most recent tmux session
 # lazygit
 alias lg='lazygit'
 alias gitlazy='lazygit'
+alias gl='lazygit'
 
 # plug android in and run this command to cast
 alias cast='scrcpy'
+
+# vencord
+alias vencord='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
