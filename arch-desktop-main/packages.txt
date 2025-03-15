@@ -14,6 +14,7 @@ wofi
 wpa_supplicant
 xdg-desktop-portal-hyprland
 xdg-utils
+waybar
 github-cli
 zsh
 zsh-autosuggestions
