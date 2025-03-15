@@ -38,3 +38,39 @@ setopt appendhistory
 # copied from fzf github
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+# set up zoxide (basically `z` is a better `cd` command)
+eval "$(zoxide init zsh)"
+
+# terminal prompt
+PS1='%F{#8000FF}%n%f %F{#00FFFF}%~%f %# '
+
+#------------------------------------------------
+# ALIASES
+#------------------------------------------------
+
+# easy venv management
+alias venv='source .venv/bin/activate'
+alias mkvenv='python -m venv .venv && source .venv/bin/activate'
+alias rmvenv='rm -rf .venv'
+
+# exit like nvim
+alias :q='exit'
+alias :c='clear' # this isnt like nvim but felt appropriate
+alias :r='reset' # see above
+
+# eza (better ls)
+alias ls='eza --icons'
+alias tree='eza -T --icons'
+alias lsa='eza -la'
+alias treea='eza -T -la'
+compdef eza=ls # uses completions of ls for these aliases
+
+# tmux
+alias tmuxa='tmux a -t' # attach to most recent tmux session
+
+# lazygit
+alias lg='lazygit'
+alias gitlazy='lazygit'
+
+# plug android in and run this command to cast
+alias cast='scrcpy'
