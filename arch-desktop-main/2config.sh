@@ -55,7 +55,7 @@ info "Linking dotfiles..."
 link_file "$MAIN_DIR/.zshrc" "$HOME/.zshrc"
 # link_file "$MAIN_DIR/.config/tmux" "$HOME/.config/tmux"
 # link_file "$MAIN_DIR/.config/nvim" "$HOME/.config/nvim"
-# link_file "$MAIN_DIR/.config/kitty" "$HOME/.config/kitty"
+link_file "$MAIN_DIR/.config/kitty" "$HOME/.config/kitty"
 # link_file "$MAIN_DIR/.config/hypr" "$HOME/.config/hypr"
 # link_file "$MAIN_DIR/.config/waybar" "$HOME/.config/waybar"
 
