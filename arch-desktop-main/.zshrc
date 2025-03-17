@@ -42,7 +42,7 @@ source <(fzf --zsh)
 eval "$(zoxide init zsh)"
 
 # terminal prompt
-PS1='%F{#8000FF}%n%f %F{#00FFFF}%~%f %# '
+PS1='%F{#bd93f9}%n%f %F{#00FFFF}%~%f %# '
 
 #------------------------------------------------
 # ALIASES
