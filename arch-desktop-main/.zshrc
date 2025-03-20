@@ -4,7 +4,7 @@ HISTSIZE=5000
 SAVEHIST=5000
 setopt autocd
 unsetopt beep
-bindkey -v
+# bindkey -v # gives zsh vim keybindings
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/rjn/.zshrc'
