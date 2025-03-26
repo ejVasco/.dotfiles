@@ -119,3 +119,4 @@ This is just a really long section, that won't be super specific about packages,
 - do tmux, hyprland, waybar, kitty, nvim configs first
 - look into these packages since i dont have them installed: hypridle, hyprlock, hyprpaper, hyprpolkitagent, hyprsunset, hyprsysteminfo
 - look into the dracula theme since its near universal
+- add auto updating to my hyprland autostart? or an easy command 'updateconf' or something
