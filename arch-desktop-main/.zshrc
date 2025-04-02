@@ -45,7 +45,7 @@ eval "$(zoxide init zsh)"
 PS1='%F{#bd93f9}%n%f %F{#00FFFF}%~%f %# '
 
 # should make more compatible while ssh'ing
-export TERM=xterm
+export TERM=xterm-256color
 
 #------------------------------------------------
 # ALIASES
