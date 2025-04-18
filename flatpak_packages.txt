@@ -1,3 +1,4 @@
 com.vivaldi.Vivaldi
 com.discordapp.Discord
 com.valvesoftware.Steam
+us.zoom.Zoom
