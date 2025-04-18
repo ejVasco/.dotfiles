@@ -2,3 +2,4 @@ lazygit
 eza
 yazi
 helix
+glow

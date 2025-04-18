@@ -27,16 +27,7 @@ Not sure yet, but this will be for any commands that I couldn't put in the above
 
 
 
-TODO maybe
 
-gpg key for vivaldi
-wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo gpg --dearmor -o /usr/share/keyrings/vivaldi-browser.gpg
-vivaldi repo
-echo "deb [signed-by=/usr/share/keyrings/vivaldi-browser.gpg] https://repo.vivaldi.com/archive/deb/ stable main" | sudo tee /etc/apt/sources.list.d/vivaldi.list
-update package list
-sudo apt update
-install vivaldi
-sudo apt install vivaldi-stable
 
 enable multiarchitecture on 64 bit system
 sudo dpkg --add-architecture i386
