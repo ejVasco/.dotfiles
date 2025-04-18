@@ -83,12 +83,4 @@ else
     echo "Failed to install zoxide."
 fi
 #------------------------------------------------
-# Clone the kitty-themes repository
-if [ ! -d "$HOME/.config/kitty/themes" ]; then
-  echo "Cloning kitty-themes repository..."
-  git clone https://github.com/dexpota/kitty-themes.git ~/.config/kitty/themes
-else
-  echo "kitty-themes repository is already cloned."
-fi
-#------------------------------------------------
 echo "All tasks in 5_other.sh completed!"

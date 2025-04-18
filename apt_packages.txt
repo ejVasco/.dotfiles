@@ -9,7 +9,6 @@ fzf
 zsh-syntax-highlighting
 zsh-autosuggestions
 discord
-kitty
 qbittorrent
 code
 yt-dlp
@@ -23,3 +22,4 @@ feh
 zathura
 alacritty
 copyq
+scrcpy
