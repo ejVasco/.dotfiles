@@ -6,3 +6,4 @@ so.libdb.dissent
 md.obsidian.Obsidian
 com.atlauncher.ATLauncher
 com.usebottles.bottles
+so.libdb.dissent

@@ -3,3 +3,4 @@ eza
 yazi
 helix
 glow
+btop

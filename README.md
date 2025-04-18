@@ -34,3 +34,14 @@ sudo dpkg --add-architecture i386
 add to sudo nano /etc/apt/sources.list
 deb http://deb.debian.org/debian/ bookworm main contrib non-free
 
+# Packages I may want to check out
+## apt
+## brew
+## flatpak
+- lonewolf
+- notorious
+- pdf slicer
+- foliate
+- escritoire
+- bookup
+
