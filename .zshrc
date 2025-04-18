@@ -134,3 +134,6 @@ alias updateall='sudo apt update && sudo apt upgrade -y && brew update && brew u
 alias updateallclean='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && brew update && brew upgrade && brew cleanup && flatpak update -y && flatpak uninstall --unused -y'
 # bat alias bc its different
 alias bat='batcat'
+# venv stuff
+alias mkvenv='python3 -m venv venv'
+alias venv='source venv/bin/activate'

@@ -4,3 +4,4 @@ yazi
 helix
 glow
 btop
+yt-dlp
