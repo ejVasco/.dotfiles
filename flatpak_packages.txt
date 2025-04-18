@@ -2,3 +2,5 @@ com.vivaldi.Vivaldi
 com.discordapp.Discord
 com.valvesoftware.Steam
 us.zoom.Zoom
+so.libdb.dissent
+md.obsidian.Obsidian

@@ -17,3 +17,5 @@ zathura
 alacritty
 copyq
 scrcpy
+nodejs
+python3
