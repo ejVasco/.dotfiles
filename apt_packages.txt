@@ -4,16 +4,10 @@ neovim
 curl
 wget
 build-essential
-vivaldi-stable
 fzf
-zsh-syntax-highlighting
-zsh-autosuggestions
-discord
 qbittorrent
 code
 yt-dlp
-steam
-tree
 wine64
 winetricks
 syncthing

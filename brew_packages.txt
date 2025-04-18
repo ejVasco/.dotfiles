@@ -1,3 +1,4 @@
 lazygit
 eza
 yazi
+helix
