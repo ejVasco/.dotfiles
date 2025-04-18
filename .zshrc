@@ -132,3 +132,5 @@ alias tmuxa='tmux a -t' # attach most recent session
 # update commandsn
 alias updateall='sudo apt update && sudo apt upgrade -y && brew update && brew upgrade && flatpak update -y'
 alias updateallclean='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && brew update && brew upgrade && brew cleanup && flatpak update -y && flatpak uninstall --unused -y'
+# bat alias bc its different
+alias bat='batcat'

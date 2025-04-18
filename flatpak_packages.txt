@@ -4,3 +4,5 @@ com.valvesoftware.Steam
 us.zoom.Zoom
 so.libdb.dissent
 md.obsidian.Obsidian
+com.atlauncher.ATLauncher
+com.usebottles.bottles
