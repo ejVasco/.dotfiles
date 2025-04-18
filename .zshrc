@@ -114,3 +114,21 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # zoxide
 export PATH="$HOME/.local/bin:$PATH"
 eval "$(zoxide init zsh)"
+# lazygit
+alias lg='lazygit'
+# to kinda mimmic vim
+alias :q='exit'
+alias :c='clear'
+alias :r='reset'
+# extra eza aliases (already a bunch in the plugin)
+alias tree='eza -T --icons'
+alias treea='eza -T -la --icons'
+# cast android phone via cable
+alias cast='scrcpy'
+# vencord installer/updater
+alias vencord='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
+# tmuxa
+alias tmuxa='tmux a -t' # attach most recent session
+# update commandsn
+alias updateall='sudo apt update && sudo apt upgrade -y && brew update && brew upgrade && flatpak update -y'
+alias updateallclean='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && brew update && brew upgrade && brew cleanup && flatpak update -y && flatpak uninstall --unused -y'
