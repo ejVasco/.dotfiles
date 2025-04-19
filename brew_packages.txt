@@ -5,3 +5,4 @@ helix
 glow
 btop
 yt-dlp
+lazygit
