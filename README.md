@@ -34,6 +34,8 @@ sudo dpkg --add-architecture i386
 add to sudo nano /etc/apt/sources.list
 deb http://deb.debian.org/debian/ bookworm main contrib non-free
 
+# Things I have noticed I may want to check
+When i used the script on my pc, not all the brew packages installed, so maybe i should reboot again after running brew.sh, or just run install.sh twice. I'm really not sure what caused the issue
 # Packages I may want to check out
 ## apt
 ## brew

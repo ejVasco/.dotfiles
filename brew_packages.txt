@@ -6,4 +6,4 @@ glow
 btop
 yt-dlp
 lazygit
-eza
+neofetch
