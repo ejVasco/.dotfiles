@@ -88,5 +88,9 @@ fi
 # elevating flatpak permissions
 echo "Elevating permissions of certain flatpaks"
 flatpak override --user --device=all cc.arduino.arduinoide
+flatpak override --user --filesystem=host cc.arduino.arduinoide
+#------------------------------------------------
+echo "Elevating user permissions"
+sudo usermod -aG dialout $USER # this gives user more USB permissions or something
 #------------------------------------------------
 echo "All tasks in 5_other.sh completed!"

@@ -15,6 +15,13 @@ fi
 ln -s "$ZSHRC_SOURCE" "$ZSHRC_TARGET"
 echo ".zshrc symlinked."
 #------------------------------------------------
-
+# copyq config
+COPYQ_SOURCE="$HOME/.dotfiles/configs/copyq/copyq.conf"
+COPYQ_TARGET="$HOME/.config/copyq/copyq.conf"
+if [ -e "$COPYQ_TARGET" ] || [ -L "$COPYQ_TARGET" ]; then
+  rm -f "$COPYQ_TARGET"
+fi
+ln -s "$COPYQ_SOURCE" "$COPYQ_TARGET"
+echo ".config/copyq/copyq.conf symlinked."
 #------------------------------------------------
 echo "All config files linked!"
