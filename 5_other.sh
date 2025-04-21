@@ -2,10 +2,12 @@
 #-----------------------------------------------
 # Current list of things this file does
 # 1 Downloads repos for zsh-autosuggestions and zsh-syntax-highlighting to be used as oh my zsh plugins
+# ^ change this, i want to put the repo's in submodules that get sym linked to their needed location instead
 # 2 Download hack nerd font which is my choice nerd font to use in configs
 # 3 enable and start syncthing
 # 4 install, enable, start tailscale and try to up tailscale (user needed)
 # 5 install zoxide
+# 6 gives certain flatpaks elevated permissions like usb devices, or access to other files
 #-----------------------------------------------
 echo "Running other setup stuff that didn't really fit other scripts..."
 #------------------------------------------------
@@ -82,5 +84,9 @@ if [ $? -eq 0 ]; then
 else
     echo "Failed to install zoxide."
 fi
+#------------------------------------------------
+# elevating flatpak permissions
+echo "Elevating permissions of certain flatpaks"
+flatpak override --user --device=all cc.arduino.arduinoide
 #------------------------------------------------
 echo "All tasks in 5_other.sh completed!"

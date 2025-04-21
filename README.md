@@ -19,11 +19,12 @@ Must be done to apply the new default shell as Zsh.
 3. Run `brew.sh`
 Installs brew and adds it to path already.
 4. Run `install.sh`
-Installs packages via apt and brew.
+Installs packages via apt and brew. (may need to run multiple times, idk one time i ran it and not everything installed)
 5. Run `config.sh`
 Creates symlinks between configs in the repo and the config location that programs use.
-6. Run `finalize.sh`
-Not sure yet, but this will be for any commands that I couldn't put in the above files.
+6. Run `other.sh`
+Tailscale, fonts, zoxide, flatpak elevated permissions
+7. Restart system to make sure everything applies correctly.
 
 
 
@@ -47,3 +48,7 @@ When i used the script on my pc, not all the brew packages installed, so maybe i
 - escritoire
 - bookup
 
+# Things that need to manually do on new systems
+- settings of pop os
+- cyberghost download
+- auto mounts through the drives app/program
