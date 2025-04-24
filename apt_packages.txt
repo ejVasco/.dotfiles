@@ -25,3 +25,4 @@ gh
 lutris
 gnome-tweaks
 gnome-shell-extensions
+qalc
