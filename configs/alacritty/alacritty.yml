@@ -3,15 +3,16 @@ window:
     x: 6
     y: 4
   opacity: 0.85
+  decorations: "None"
 
 font:
   normal:
-    family: "Hack Nerd Font"
+    family: "FiraCode Nerd Font"
     style: Regular
   bold:
-    family: "Hack Nerd Font"
+    family: "FiraCode Nerd Font"
     style: Bold
   italic:
-    family: "Hack Nerd Font"
+    family: "FiraCode Nerd Font"
     style: Italic
   size: 12.0
