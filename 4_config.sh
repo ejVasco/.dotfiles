@@ -24,4 +24,15 @@ fi
 ln -s "$COPYQ_SOURCE" "$COPYQ_TARGET"
 echo ".config/copyq/copyq.conf symlinked."
 #------------------------------------------------
+# alacritty config
+ALACRITTY_SOURCE="$HOME/.dotfiles/configs/alacritty/alacritty.yml"
+ALACRITTY_TARGET="$HOME/.config/alacritty/alacritty.yml"
+mkdir $HOME/.config/alacritty
+if [ -e "$ALACRITTY_TARGET" ] || [ -L "$ALACRITTY_TARGET" ]; then
+  rm -f "$ALACRITTY_TARGET"
+fi
+ln -s "$ALACRITTY_SOURCE" "$ALACRITTY_TARGET"
+echo ".config/alacritty/alacritty.yml symlinked."
+#------------------------------------------------
+
 echo "All config files linked!"

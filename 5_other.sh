@@ -3,11 +3,11 @@
 # Current list of things this file does
 # 1 Downloads repos for zsh-autosuggestions and zsh-syntax-highlighting to be used as oh my zsh plugins
 # ^ change this, i want to put the repo's in submodules that get sym linked to their needed location instead
-# 2 Download hack nerd font which is my choice nerd font to use in configs
-# 3 enable and start syncthing
-# 4 install, enable, start tailscale and try to up tailscale (user needed)
-# 5 install zoxide
-# 6 gives certain flatpaks elevated permissions like usb devices, or access to other files
+# 4 firacode nerd font
+# 3 syncthing
+# 4 tailscale
+# 5 zoxide
+# 6 elevates some flatpak perms
 #-----------------------------------------------
 echo "Running other setup stuff that didn't really fit other scripts..."
 #------------------------------------------------
@@ -31,21 +31,9 @@ clone_plugin "zsh-autosuggestions" "https://github.com/zsh-users/zsh-autosuggest
 clone_plugin "zsh-syntax-highlighting" "https://github.com/zsh-users/zsh-syntax-highlighting"
 #------------------------------------------------
 # hack nerd font
-echo "Installing Hack Nerd Font..."
-FONT_DIR="$HOME/.local/share/fonts"
-HACK_FONT_DIR="$FONT_DIR/HackNerdFont"
-HACK_ZIP_URL="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip"
-mkdir -p "$FONT_DIR"
-cd "$FONT_DIR" || exit 1
-if [ ! -d "$HACK_FONT_DIR" ]; then
-  wget -q "$HACK_ZIP_URL" -O Hack.zip
-  unzip -qq Hack.zip -d HackNerdFont
-  rm Hack.zip
-  fc-cache -fv
-  echo "Hack Nerd Font installed!"
-else
-  echo "Hack Nerd Font already installed."
-fi
+echo "Installing Fira Code Nerd Font..."
+brew install --cask font-fira-code-nerd-font
+brew install --cask font-fira-mono-nerd-font
 #------------------------------------------------
 # syncthing
 echo "Setting up Syncthing systemd service..."
@@ -89,7 +77,6 @@ fi
 echo "Elevating permissions of certain flatpaks"
 flatpak override --user --device=all cc.arduino.arduinoide
 flatpak override --user --filesystem=host cc.arduino.arduinoide
-#------------------------------------------------
 echo "Elevating user permissions"
 sudo usermod -aG dialout $USER # this gives user more USB permissions or something
 #------------------------------------------------

@@ -20,4 +20,7 @@ just redo this later
 packages files - add as I add more packages to my system
 
 
+
 need to use submodules instead of just git cloning for some stuff
+
+

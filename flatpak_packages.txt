@@ -9,3 +9,4 @@ com.usebottles.bottles
 so.libdb.dissent
 org.remmina.Remmina
 cc.arduino.IDE2
+com.spotify.Client

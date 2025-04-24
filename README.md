@@ -52,3 +52,5 @@ When i used the script on my pc, not all the brew packages installed, so maybe i
 - settings of pop os
 - cyberghost download
 - auto mounts through the drives app/program
+- blender
+- godot or other game engines
