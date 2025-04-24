@@ -80,4 +80,14 @@ flatpak override --user --filesystem=host cc.arduino.arduinoide
 echo "Elevating user permissions"
 sudo usermod -aG dialout $USER # this gives user more USB permissions or something
 #------------------------------------------------
+# set gtk/gnome theme stuff
+echo "Symlinking dracula gtk theme"
+mkdir -p ~/.themes
+mkdir -p ~/.icons
+ln -sf "$HOME/.dotfiles/themes/dracula-gtk" ~/.themes/Dracula
+# don't run these below because dracula theme does not look correct on cosmic desktop
+# gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
+# gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
+flatpak override --user --env=GTK_THEME=Dracula
+#------------------------------------------------
 echo "All tasks in 5_other.sh completed!"
