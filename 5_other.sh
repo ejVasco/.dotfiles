@@ -87,6 +87,7 @@ mkdir -p ~/.icons
 ln -sf "$HOME/.dotfiles/themes/dracula-gtk" ~/.themes/Dracula
 # don't run these below because dracula theme does not look correct on cosmic desktop
 # gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
+gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
 # gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
 flatpak override --user --env=GTK_THEME=Dracula
 #------------------------------------------------
