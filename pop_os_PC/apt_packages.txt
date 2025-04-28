@@ -26,3 +26,4 @@ lutris
 gnome-tweaks
 gnome-shell-extensions
 qalc
+libgtk-3-dev
