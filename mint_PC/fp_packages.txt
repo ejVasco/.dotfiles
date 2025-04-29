@@ -19,3 +19,4 @@ page.kramo.Cartridges
 info.smplayer.SMPlayer
 com.github.hluk.copyq
 com.github.iwalton3.jellyfin-media-player
+io.github.getnf.embellish
