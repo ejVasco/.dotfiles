@@ -7,3 +7,12 @@ syncthing
 qalc
 qalculate-gtk
 scrcpy
+vlc
+python3
+python3-pip
+python3-venv
+python3-dev
+xrdp
+xorgxrdp
+pipewire-module-xrdp
+tmux

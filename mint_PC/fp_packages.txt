@@ -16,3 +16,6 @@ net.lutris.Lutris
 com.heroicgameslauncher.hgl
 io.itch.itch
 page.kramo.Cartridges
+info.smplayer.SMPlayer
+com.github.hluk.copyq
+com.github.iwalton3.jellyfin-media-player

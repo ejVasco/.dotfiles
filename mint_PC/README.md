@@ -1,15 +1,14 @@
 # Overview
 # Instructions
-## Update system
-Refresh repositories or whatever:
+## 1 Update system
 ```
 sudo apt update
 ```
-Actually update:
 ```
 sudo apt upgrade
 ```
-## Install Zsh
+Reboot system just to be safe
+## 2 Install Zsh
 ```
 sudo apt install zsh
 ```
@@ -18,7 +17,7 @@ chsh -s $(which zsh)
 ```
 - Reboot system (Won't show any feedback but just proceed)
 - Upon reboot and opening terminal, zsh will prompt to create a configuration through a cli menu, just quit by pressing 'q'
-## Install Brew
+## 3 Install Brew
 - Run the script found on the website: https://brew.sh/
 (Must run after installing zsh) 
 After running the end of the terminal output will look something like this:
@@ -39,6 +38,14 @@ After running the end of the terminal output will look something like this:
     https://docs.brew.sh
 ```
 Note the commands, the commands are dependant on the current shell and the the name/username/user.
+## 4 Install Packages
+## 5 Symlink Configs
+## 6 Manual Packages
+Other packages to manually install, go to their respective websites:
+- tailscale - https://tailscale.com
+- godot - https://godotengine.org
+- blender - https://www.blender.org
+- cyberghost - https://www.cyberghostvpn.com
 # Other
 ## About Packages Managers
 - APT for core applications (window managers, system libraries, steam, etc)
