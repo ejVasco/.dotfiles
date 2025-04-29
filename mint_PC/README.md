@@ -3,14 +3,24 @@
 # Instructions
 
 ## Update system
-```sudo apt update```
-```sudo apt upgrade```
+Refresh repositories or whatever:
+```
+sudo apt update
+```
+Actually update:
+```
+sudo apt upgrade
+```
 
 ## Install Zsh
 
-```sudo apt install zsh```
+```
+sudo apt install zsh
+```
 
-```chsh -s $(which zsh)```
+```
+chsh -s $(which zsh)
+```
 (Won't show any feedback but just proceed)
 
 Reboot system
