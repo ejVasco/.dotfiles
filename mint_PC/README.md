@@ -1,7 +1,5 @@
 # Overview
-
 # Instructions
-
 ## Update system
 Refresh repositories or whatever:
 ```
@@ -11,24 +9,17 @@ Actually update:
 ```
 sudo apt upgrade
 ```
-
 ## Install Zsh
-
 ```
 sudo apt install zsh
 ```
-
 ```
 chsh -s $(which zsh)
 ```
-(Won't show any feedback but just proceed)
-
-Reboot system
-
-Upon reboot and opening terminal, zsh will prompt to create a configuration through a cli menu, just quit by pressing 'q'
-
+- Reboot system (Won't show any feedback but just proceed)
+- Upon reboot and opening terminal, zsh will prompt to create a configuration through a cli menu, just quit by pressing 'q'
 ## Install Brew
-Run the script found on the website: https://brew.sh/
+- Run the script found on the website: https://brew.sh/
 (Must run after installing zsh) 
 After running the end of the terminal output will look something like this:
 ```
@@ -47,15 +38,9 @@ After running the end of the terminal output will look something like this:
 - Further documentation:
     https://docs.brew.sh
 ```
-
-## 
-
+Note the commands, the commands are dependant on the current shell and the the name/username/user.
 # Other
-
 ## About Packages Managers
-
-APT for core applications (window managers, system libraries, steam, etc)
-
-Flatpak for GUI apps with newer versions (libre office, gimp, etc)
-
-Homebrew for newer versions of developer and cli tools.
+- APT for core applications (window managers, system libraries, steam, etc)
+- Flatpak for GUI apps with newer versions (libre office, gimp, etc).
+- Homebrew for newer versions of developer and cli tools.

@@ -1,2 +1,9 @@
+curl
+wget
 build-essential
-gh
+steam
+ani-cli
+syncthing
+qalc
+qalculate-gtk
+scrcpy

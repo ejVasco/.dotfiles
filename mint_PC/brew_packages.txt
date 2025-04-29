@@ -1,3 +1,11 @@
 gcc
 neovim
 gh
+helix
+fzf
+scrcpy
+yt-dlp
+btop
+glow
+yazi
+eza
