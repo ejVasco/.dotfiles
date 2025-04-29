@@ -8,3 +8,5 @@ btop
 glow
 yazi
 eza
+zoxide
+bat

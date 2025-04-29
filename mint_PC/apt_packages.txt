@@ -16,3 +16,4 @@ xrdp
 xorgxrdp
 pipewire-module-xrdp
 tmux
+copyq

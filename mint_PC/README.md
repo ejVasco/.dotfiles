@@ -46,6 +46,7 @@ Other packages to manually install, go to their respective websites:
 - godot - https://godotengine.org
 - blender - https://www.blender.org
 - cyberghost - https://www.cyberghostvpn.com
+- grayjay - https://grayjay.app
 # Other
 ## About Packages Managers
 - APT for core applications (window managers, system libraries, steam, etc)
