@@ -1,0 +1,3 @@
+[submodule "universal/themes/dracula"]
+	path = universal/themes/dracula
+	url = https://github.com/dracula/dracula-theme.git
