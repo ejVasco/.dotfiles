@@ -124,6 +124,12 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias lg='lazygit' # abreviation
 alias cast='scrcpy' # cast phone to pc over cable
 
+# clean commands
+alias fpclean="flatpak uninstall --unused && flatpak repair"
+alias brewclean="brew cleanup -s && brew autoremove && brew doctor"
+alias aptclean="sudo apt autoremove --purge -y && sudo apt autoclean && sudo apt clean"
+
+
 # update commands
 alias update='sudo apt update && sudo apt upgrade -y && brew update && brew upgrade && flatpak update -y'
 alias updateclean='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && brew update && brew upgrade && brew cleanup && flatpak update -y && flatpak uninstall --unused -y'
