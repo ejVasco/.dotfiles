@@ -52,6 +52,9 @@ Note the commands, the commands are dependant on the current shell and the the n
 ## 8 Remote accessible
 Run to make syscem remote accessible (I typically use tailscale to remote access my PC)
 ```
+sudo systemctl enable --now ssh
+```
+```
 sudo systemctl enable --now xrdp
 ```
 ## 7 Manual Packages

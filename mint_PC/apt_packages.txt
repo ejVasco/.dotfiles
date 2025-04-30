@@ -15,5 +15,6 @@ python3-dev
 xrdp
 xorgxrdp
 pipewire-module-xrdp
+ssh
 tmux
 copyq
