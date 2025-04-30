@@ -59,14 +59,15 @@ sudo systemctl enable --now xrdp
 ```
 ## 7 Manual Packages
 Other packages to manually install, may want to go to their respective websites:
+
 | package | note | link|
-|-|-|
-| godot | game engine | https://godotengine.org |
-| blender | | https://www.blender.org |
-| cyberghostvpn | | https://www.cyberghostvpn.com |
-| grayjay |  | https://grayjay.app |
-| vscodium | open source vscode | https://vscodium.com |
-| tailscale | | https://tailscale.com |
+|---------|------|-----|
+| godot         | game engine        | https://godotengine.org |
+| blender       |                    | https://www.blender.org |
+| cyberghostvpn |                    | https://www.cyberghostvpn.com |
+| grayjay       |                    | https://grayjay.app |
+| vscodium      | open source vscode | https://vscodium.com |
+| tailscale     |                    | https://tailscale.com |
 for tailscale
 ```bash
 https://vscodium.com
