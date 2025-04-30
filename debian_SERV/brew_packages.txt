@@ -1,0 +1,12 @@
+gcc
+neovim
+gh
+helix
+fzf
+yt-dlp
+btop
+glow
+yazi
+eza
+zoxide
+bat
