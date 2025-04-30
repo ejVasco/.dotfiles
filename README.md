@@ -11,9 +11,6 @@ To pull submodules after cloning repo:
 ```
 git submodule update --init --recursive
 ```
-```
-git pull
-```
 The dracula submodules take a while to clone and some are individual submodule themes are not public and get skipped.
 
 After cloning navigate into the corresponding distro repo and more information in the README.
