@@ -1,18 +1,18 @@
 # Overview
 # Instructions
 ## 1 Update system
-```
+```bash
 sudo apt update
 ```
-```
+```bash
 sudo apt upgrade
 ```
 Reboot system just to be safe
 ## 2 Install Zsh and oh-my-zsh
-```
+```bash
 sudo apt install -y zsh
 ```
-```
+```bash
 chsh -s $(which zsh)
 ```
 - Reboot system (Won't show any feedback but just proceed)
@@ -41,32 +41,36 @@ chsh -s $(which zsh)
 Note the commands, the commands are dependant on the current shell and the the name/username/user. Also these commands are needed in order for brew packages to install.
 ## 4 Install Packages
 - Run the script `install.sh` to install apt, brew, and flatpaks
-```
+```bash
 ./install.sh
 ```
 ## 5 Symlink Configs
 - Run the script `config.sh` to symlink configs and themes for packages.
-```
+```bash
 ./config.sh
 ```
 ## 8 Remote accessible
 Run to make syscem remote accessible (I typically use tailscale to remote access my PC)
-```
+```bash
 sudo systemctl enable --now ssh
 ```
-```
+```bash
 sudo systemctl enable --now xrdp
 ```
 ## 7 Manual Packages
 Other packages to manually install, may want to go to their respective websites:
-- tailscale - https://tailscale.com
+| package | note | link|
+|-|-|
+| godot | game engine | https://godotengine.org |
+| blender | | https://www.blender.org |
+| cyberghostvpn | | https://www.cyberghostvpn.com |
+| grayjay |  | https://grayjay.app |
+| vscodium | open source vscode | https://vscodium.com |
+| tailscale | | https://tailscale.com |
+for tailscale
+```bash
+https://vscodium.com
 ```
-curl -fsSL https://tailscale.com/install.sh | sh
-```
-- godot - https://godotengine.org
-- blender - https://www.blender.org
-- cyberghost - https://www.cyberghostvpn.com
-- grayjay - https://grayjay.app
 # Other
 ## About Packages Managers
 - APT for core applications (window managers, system libraries, steam, etc)

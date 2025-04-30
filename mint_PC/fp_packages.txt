@@ -8,7 +8,6 @@ com.usebottles.bottles
 org.remmina.Remmina
 org.darktable.Darktable
 org.qbittorrent.qBittorrent
-com.vscodium.codium
 org.gimp.GIMP
 us.zoom.Zoom
 com.atlauncher.ATLauncher
