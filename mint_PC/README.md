@@ -58,7 +58,8 @@ sudo systemctl enable --now ssh
 sudo systemctl enable --now xrdp
 ```
 ## 7 Manual Packages
-Other packages to manually install, may want to go to their respective websites:
+Other packages to manually install.
+Main reason for manually installing: install specific version, not directly avaliable through apt/brew/flatpak, or apt/flatpak/brew version is worse (or more annoying to use) than through the website.
 
 | package | note | link|
 |---------|------|-----|
@@ -68,6 +69,7 @@ Other packages to manually install, may want to go to their respective websites:
 | grayjay       |                    | https://grayjay.app |
 | vscodium      | open source vscode | https://vscodium.com |
 | tailscale     |                    | https://tailscale.com |
+
 for tailscale
 ```bash
 https://vscodium.com
